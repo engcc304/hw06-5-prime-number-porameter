@@ -30,18 +30,20 @@ int is_prime(int num) {
 }
 
 int main() {
-    int endNum;
-    printf("Enter number: ");
-    scanf("%d", &endNum);
+    int endNum ;
+    
+    printf( "Enter number: ") ;
+    scanf( "%d", &endNum) ;
 
-    printf("Output:\n");
-    for (int currentNum = endNum; currentNum >= 2; currentNum--) {
-        if (is_prime(currentNum)) {
-            printf("%d ", currentNum);
-        }
-    }
+    printf( "Output:\n") ;
+   
+    for (int currentNum = endNum; currentNum >= 2 ; currentNum--) { //Loop from endNum to 2 (inclusive), decreasing by 1 at each turn of the loop.
+        if (is_prime(currentNum)) { //Call the is_prime function to check if currentNum is prime.
+            printf( "%d ", currentNum) ;
+        }//end if
+    }//end for
 
-    printf("\n");
+    printf("\n") ;
 
-    return 0;
-}
+    return 0 ;
+}//end main fuction
